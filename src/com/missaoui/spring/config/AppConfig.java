@@ -21,6 +21,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 	
 	@Bean 
 	public ViewResolver viewResolver() {
+		System.out.println("Bean ViewResolver");
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		viewResolver.setViewClass(JstlView.class);
 		viewResolver.setPrefix("/WEB-INF/view/");
